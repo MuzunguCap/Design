@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzungu Capital — Founders Funding Founders</title>
+  <meta name="description" content="Muzungu Capital ist ein gründergeführter Early-Stage-Investor aus München. Wir investieren 250.000 € bis 2 Mio. € in Digital Marketing, AdTech und MarTech in Europa und den USA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌍</text></svg>">
+</head>
+<body>
+
+  <!-- ===== 3D Hintergrund (fixiert, scrollreaktiv) ===== -->
+  <canvas id="bg3d" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">MUZUNGU<span>CAPITAL</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">Über uns</a>
+      <a href="#focus">Fokus</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#approach">Ansatz</a>
+      <a href="#contact" class="nav__cta">Kontakt</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <p class="hero__kicker reveal">Gründergeführter Early-Stage-Investor · München</p>
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.1s">Founders</span>
+        <span class="reveal hero__title-accent" style="--d:.25s">Funding</span>
+        <span class="reveal" style="--d:.4s">Founders.</span>
+      </h1>
+      <p class="hero__sub reveal" style="--d:.55s">
+        Wir verwandeln Geschäftsideen in tragfähige Unternehmen –
+        mit Kapital, Erfahrung und einem Netzwerk, das aus eigener
+        Gründung gewachsen ist.
+      </p>
+      <div class="hero__actions reveal" style="--d:.7s">
+        <a href="#portfolio" class="btn btn--primary">Portfolio entdecken</a>
+        <a href="#contact" class="btn btn--ghost">Pitch einreichen</a>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Nach unten scrollen">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===== Über uns ===== -->
+    <section class="section" id="about">
+      <div class="section__inner">
+        <p class="section__kicker reveal">Über uns</p>
+        <h2 class="section__title reveal">Wir waren selbst Gründer.<br>Deshalb investieren wir anders.</h2>
+        <div class="about__grid">
+          <p class="about__text reveal">
+            Muzungu Capital wurde 2017 in München gegründet – von Unternehmern,
+            die ihre eigene Firma vom Apartment bis zum internationalen Exit mit
+            über 400 Mitarbeitenden geführt haben. Diese Erfahrung geben wir
+            weiter: Wir begleiten Gründerinnen und Gründer in der frühen Phase,
+            in der die richtigen Entscheidungen über alles entscheiden.
+          </p>
+          <div class="stats reveal">
+            <div class="stat">
+              <span class="stat__value" data-count="250" data-suffix=" T€">0</span>
+              <span class="stat__label">Minimum-Ticket</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="2" data-suffix=" Mio €">0</span>
+              <span class="stat__label">Maximum-Ticket</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="2017" data-plain="true">0</span>
+              <span class="stat__label">Gegründet in München</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="2" data-suffix=" Kontinente">0</span>
+              <span class="stat__label">Europa &amp; USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Fokus ===== -->
+    <section class="section" id="focus">
+      <div class="section__inner">
+        <p class="section__kicker reveal">Investment-Fokus</p>
+        <h2 class="section__title reveal">Fünf Felder. Volle Tiefe.</h2>
+        <div class="focus__grid">
+          <article class="focus__item reveal tilt">
+            <div class="focus__icon">◈</div>
+            <h3>Digital Marketing</h3>
+            <p>Plattformen und Modelle, die Marken messbar wachsen lassen.</p>
+          </article>
+          <article class="focus__item reveal tilt" style="--d:.08s">
+            <div class="focus__icon">◎</div>
+            <h3>Online Advertising</h3>
+            <p>Performance, Programmatic und neue Werbeökosysteme.</p>
+          </article>
+          <article class="focus__item reveal tilt" style="--d:.16s">
+            <div class="focus__icon">⬡</div>
+            <h3>Ad Technologies</h3>
+            <p>Infrastruktur, Targeting und Attribution der nächsten Generation.</p>
+          </article>
+          <article class="focus__item reveal tilt" style="--d:.24s">
+            <div class="focus__icon">◍</div>
+            <h3>Social Media</h3>
+            <p>Netzwerke, Creator-Economy und Community-getriebene Produkte.</p>
+          </article>
+          <article class="focus__item reveal tilt" style="--d:.32s">
+            <div class="focus__icon">✦</div>
+            <h3>Content Marketing</h3>
+            <p>Technologie, die Inhalte skalierbar und wirksam macht.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Portfolio ===== -->
+    <section class="section" id="portfolio">
+      <div class="section__inner">
+        <p class="section__kicker reveal">Portfolio</p>
+        <h2 class="section__title reveal">Unternehmen, an die wir glauben.</h2>
+        <div class="cards">
+
+          <article class="card reveal tilt">
+            <div class="card__glow"></div>
+            <span class="card__tag">PropTech</span>
+            <h3 class="card__title">Deutsche Teilkauf</h3>
+            <p class="card__text">
+              Equity-Release für Hausbesitzer im Ruhestand: Immobilienvermögen
+              wird in Liquidität verwandelt – ohne auszuziehen.
+            </p>
+            <span class="card__num">01</span>
+          </article>
+
+          <article class="card reveal tilt" style="--d:.08s">
+            <div class="card__glow"></div>
+            <span class="card__tag">PropTech</span>
+            <h3 class="card__title">VillaCircle</h3>
+            <p class="card__text">
+              Technologiegestützte Managed Co-Ownership für Ferienimmobilien
+              in ganz Europa.
+            </p>
+            <span class="card__num">02</span>
+          </article>
+
+          <article class="card reveal tilt" style="--d:.16s">
+            <div class="card__glow"></div>
+            <span class="card__tag">Living</span>
+            <h3 class="card__title">Hivegeist</h3>
+            <p class="card__text">
+              Ortsunabhängiges Wohnen und weltweite kulturelle Vernetzung –
+              Zuhause ist, wo du gerade bist.
+            </p>
+            <span class="card__num">03</span>
+          </article>
+
+          <article class="card reveal tilt" style="--d:.24s">
+            <div class="card__glow"></div>
+            <span class="card__tag">Energy</span>
+            <h3 class="card__title">Enmacc</h3>
+            <p class="card__text">
+              Europas Handelsplattform für Energiemärkte: Strom, Gas und
+              erneuerbare Energien – digital gehandelt.
+            </p>
+            <span class="card__num">04</span>
+          </article>
+
+          <article class="card reveal tilt" style="--d:.32s">
+            <div class="card__glow"></div>
+            <span class="card__tag">MarTech</span>
+            <h3 class="card__title">Exactag</h3>
+            <p class="card__text">
+              Marketing-Attribution und Smart Data Collection für E-Commerce –
+              jeder Euro Werbebudget wird messbar.
+            </p>
+            <span class="card__num">05</span>
+          </article>
+
+          <article class="card reveal tilt" style="--d:.4s">
+            <div class="card__glow"></div>
+            <span class="card__tag">AdTech</span>
+            <h3 class="card__title">Nano Interactive</h3>
+            <p class="card__text">
+              Suchbasiertes Targeting ohne Cookies – mit Zugang zu über
+              500 Millionen User-Profilen.
+            </p>
+            <span class="card__num">06</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Ansatz ===== -->
+    <section class="section" id="approach">
+      <div class="section__inner">
+        <p class="section__kicker reveal">Unser Ansatz</p>
+        <h2 class="section__title reveal">Mehr als Kapital.</h2>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Verstehen</h3>
+            <p>Wir kennen die Phase, in der du steckst – weil wir sie selbst durchlebt haben. Vom ersten Pitch bis zur Series A.</p>
+          </li>
+          <li class="step reveal" style="--d:.1s">
+            <span class="step__num">2</span>
+            <h3>Investieren</h3>
+            <p>Tickets zwischen 250.000 € und 2 Mio. € in Europa und den USA – schnell, unkompliziert, gründerfreundlich.</p>
+          </li>
+          <li class="step reveal" style="--d:.2s">
+            <span class="step__num">3</span>
+            <h3>Begleiten</h3>
+            <p>Operatives Sparring, Netzwerk und Strategie. Wir sind Macher, Strategen und Partner – keine stillen Geldgeber.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Kontakt ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="section__inner">
+        <p class="section__kicker reveal">Kontakt</p>
+        <h2 class="section__title reveal">Du gründest etwas Großes?<br>Sprich mit uns.</h2>
+        <div class="contact__grid reveal">
+          <a class="contact__item" href="mailto:info@muzungu-capital.com">
+            <span class="contact__label">E-Mail</span>
+            <span class="contact__value">info@muzungu-capital.com</span>
+          </a>
+          <a class="contact__item" href="tel:+491743333150">
+            <span class="contact__label">Telefon</span>
+            <span class="contact__value">+49 174 333 31 50</span>
+          </a>
+          <div class="contact__item">
+            <span class="contact__label">Büro</span>
+            <span class="contact__value">Rheinlandstraße 5<br>80805 München</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© <span id="year">2026</span> Muzungu GmbH · Rheinlandstraße 5 · 80805 München</p>
+      <p class="footer__legal">Amtsgericht München · HRB 185712</p>
+    </div>
+  </footer>
+
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="js/scene.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
